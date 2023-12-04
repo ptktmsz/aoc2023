@@ -23,14 +23,14 @@ def scratchCard(winning: list, yours: list, id: int) -> list:
     return [id + i + 1 for i in range(matches)]
 
 
-# scores = []
-#
-# for line in input:
-#     yours = list(filter(None, line.split("|")[1].strip().split(" ")))
-#     winning = list(filter(None, line.split("|")[0].split(":")[1].strip().split(" ")))
-#     scores.append(calcScore(winning, yours))
-#
-# print(f"Answer 1 is {sum(scores)}.")
+scores = []
+
+for line in input:
+    yours = list(filter(None, line.split("|")[1].strip().split(" ")))
+    winning = list(filter(None, line.split("|")[0].split(":")[1].strip().split(" ")))
+    scores.append(calcScore(winning, yours))
+
+print(f"Answer 1 is {sum(scores)}.")
 
 scratchcards = {}
 
